@@ -386,7 +386,7 @@ footer {
 color: white;
 }
 
-/*MEDIA QUERY - LAST*/
+/*MEDIA QUERY - LAST MOBILE*/
 
 @media (min-width: 600px) {
 .wide {
