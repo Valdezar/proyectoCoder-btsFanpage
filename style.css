@@ -364,9 +364,21 @@ footer {
 
 /*CONTENIDO PAG DISCOGRAFIA*/
 
+.grd{
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+}
 .table {
+    display: flex;
+    justify-content: end;
+    text-align: center;
     width: auto;
 }
+
+
+
+
+   
 
 
 
