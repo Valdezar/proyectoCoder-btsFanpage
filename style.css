@@ -364,7 +364,9 @@ footer {
 
 /*CONTENIDO PAG DISCOGRAFIA*/
 
-
+.table {
+    width: auto;
+}
 
 
 
