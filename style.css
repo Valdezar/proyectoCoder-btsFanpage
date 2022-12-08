@@ -181,6 +181,7 @@ footer {
 
 .bts__item {
     display: flex;
+    width: 100%;
     justify-content: center;
     align-items: center;
     background-color: white;
@@ -212,12 +213,11 @@ footer {
 /*CONTENIDO PAG HISTORIA*/
 
 .container {
-    display: grid;
+    display: flex;
     justify-content: center;
-    grid-template-columns: repeat(2, 600px);
-    grid-template-rows: repeat(2, 200px);
     gap: 5px;
     padding: 50px;
+    flex-wrap: wrap;
 }
 
 .conten {
@@ -256,13 +256,16 @@ footer {
 
 
 .tarjetas {
-    display: grid;
+    /*display: grid;
     grid-template-columns: repeat(3, 400px);
     grid-template-rows: repeat(3, 400px);
     align-items: center;
     justify-content: center;
-    gap: 60px;
-    
+    gap: 60px;*/
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px;
     
 }
  
@@ -272,7 +275,7 @@ footer {
     border: 2px solid white;
     font-family: 'Khand';
     border-radius: 5px;
-   
+    margin-top: 10px;
    
 }
 
@@ -286,7 +289,6 @@ footer {
     
 }
 
-
 .tarjeta__nombre-integrante {
     text-align: center;
     color: white;
@@ -297,15 +299,12 @@ footer {
     color: white;
 }
 
-
-
-.self {
+/*.self {
     transform: translate(460px);
-}
+}*/
 
 
 /*CONTENIDO GALERIA*/
-
 .grid__item {
     display: flex;
     align-items: center;
@@ -337,6 +336,7 @@ footer {
 
    
 }
+
 
 /*CONTENIDO PAG DISCOGRAFIA*/
 
@@ -374,46 +374,34 @@ footer {
 color: white;
 }
 
-/*MEDIA QUERY - LAST MOBILE*/
-
+/*MEDIA QUERIE*/
 @media (min-width: 600px) {
-.wide {
-    grid-column: span 2;
-    grid-row: span 2;
-}
-
-.tall {
-    grid-row: span 3;
-}
-
-.bts {
-    grid-row: span 2;
-}
-
-.peque {
-   grid-column: span 2;
-   
-}
-}
-
-@media (max-width: 560px) {
-    .menu li {
-        display: none;
+    .wide {
+        grid-column: span 2;
+        grid-row: span 2;
     }
-
-    header span {
-        display: block;
-        font-size: 50px;
-        margin-right: 40px;
+    
+    .tall {
+        grid-row: span 3;
     }
-}
-
-
-@media (max-width: 490px){
+    
     .bts {
-        display: none;
+        grid-row: span 2;
+    }
+    
+    .peque {
+       grid-column: span 2;
+       
+    }
+    }
+
+
+@media (max-width: 576px){
+    .bts {
+        display: -webkit-box;
+        height: 100vh;
+        width: 100vw;
+        overflow-x: scroll;
     }
 }
-
-
 
