@@ -56,6 +56,11 @@ footer {
     background-color: whitesmoke;
     border: 2px solid white;
     border-radius: 10px;
+    transition: all 0.5ms ease;
+}
+
+.redes img:hover{
+   background: #e85d04;
 }
 
 /* CONTENIDO DEL ENCABEZADO*/
