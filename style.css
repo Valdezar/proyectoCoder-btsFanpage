@@ -364,23 +364,35 @@ footer {
 
 /*CONTENIDO PAG DISCOGRAFIA*/
 
+.nextTo{
+    display: flex;
+}
 .grd{
     display: grid;
-    grid-template-columns: repeat(2, 2fr);
+    grid-template-columns: 800px;
+   
 }
 .table {
     display: flex;
-    justify-content: end;
+    justify-content: center;
     text-align: center;
     width: auto;
 }
 
+.gif{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
+    grid-auto-rows: minmax(200px, auto);
+    gap: 5px;
+}
 
-
-
+.gif__item{
+    border-radius: 20px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;  
+}
    
-
-
 
 .letter {
 color: white;
