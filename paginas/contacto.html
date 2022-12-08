@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../iconos/logo-bts.png" type="image/x-icon">
+    <link rel="stylesheet" href="../bootstrap-5.2.3-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../style.css">
     <title>BTS</title>
 </head>
@@ -30,25 +31,45 @@
         <section class="formulario">
             <form action="" class="contenido__formulario">
                 <label for="unirse">¿Desea ser parte de nuestra comunidad?</label>
-                <input type="checkbox" id="unirse"><br>
-                <label for="contacto">¿Cómo llegaste aquí?</label>
+                <input class="form-check-input" type="checkbox" id="checkboxNoLabel" value="" aria-label="...">
+                
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>¿Cómo llegaste aquí?</option>
+                    <option value="1">Facebook</option>
+                    <option value="2">Instagram</option>
+                    <option value="3">Amigo(a)</option>
+                    <option value="4">Navegando</option>
+                  </select>
+                <!--<label for="contacto">¿Cómo llegaste aquí?</label>
                 <select name="" id="contacto">
                     <option value="" class="opciones">Facebook</option>
                     <option value="" class="opciones">Instagram</option>
                     <option value="" class="opciones">Amigo(a)</option>
                     <option value="" class="opciones">Navegando</option>
-                </select><br>
-            
-                <label for="nombre"></label>
+                </select>-->
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">INGRESE SU NOMBRE:</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombres">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">INGRESE SU APELLIDO:</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="apellidos">
+                  </div><div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">INGRESE SU CORREO:</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                  </div>
+                <!--<label for="nombre"></label>
                 <input type="text" id="nombre" class="controls" placeholder="Ingrese su Nombre"/><br>
                 <label for="apellido"></label>
                 <input type="text" id="apellido" class="controls" placeholder="Ingrese su Apellido"/><br>
                 <label for="e-mail"></label>
-                <input type="text" id="e-mail" class="controls" placeholder="Ingrese su Correo"/><br>
-            
-            <div class="button">
+                <input type="text" id="e-mail" class="controls" placeholder="Ingrese su Correo"/><br>-->
+                <div class="d-grid gap-2 col-6 mx-auto">
+                    <button class="btn btn-dark" type="button">ENVIAR</button>
+                </div>
+            <!--<div class="button">
                 <button type="submit" class="button__transparent">enviar</button>
-            </div>
+            </div>-->
             </form>
         
         </section>

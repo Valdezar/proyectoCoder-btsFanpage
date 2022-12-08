@@ -137,7 +137,7 @@ footer {
     margin-top: 30px;
     border-radius: 20px;
     background-color: rgba(232, 93, 4, 0.8);
-    /*opacity: 100%;*/
+    
     
 }
 
@@ -165,26 +165,6 @@ footer {
 .opciones {
     font-family: 'Khand';
     color: black; 
-}
-
-
-.button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 10px;
-
-}
-
-.button__transparent {
-    background-color: white;
-    color: #390099;
-    border-radius: 20px;
-    font-family: 'Khand';
-    font-size: medium;
-    padding-right: 20px;
-    padding-left: 20px; 
-    
 }
 
 /* CONTENIDO MEDIA DEL INDEX */
