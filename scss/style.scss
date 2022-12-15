@@ -1,54 +1,16 @@
-$blanco: white;
-$negro: black;
-
-
-@import "index";
-@import "globalStyles";
-@import "mediaqueries";
+@import "componentes/index";
+@import "componentes/globalStyles";
+@import "componentes/mediaqueries";
+@import "componentes/variables"; 
 
 
 
 
 /* CONTENIDO DEL ENCABEZADO*/
 
-
-/*.nav {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
-}*/
-
 .navbar-brand{
     font-size: 50px;
 }
-
-/*.menu {
-    display: flex;
-}
-
-
-.menu li {
-    margin: 10px;
-    font-family: 'Khand';
-    font-size: 18px;
-}
-
-
-.menu li a {
-    color: white;
-    font-weight: bold;
-    transition: all 0.5ms ease;
-}
-
-*.menu li a:hover{
-    padding: 5px 10px;
-    background: white;
-    color: #e85d04;
-    border-radius: 15px;
-
-} */
 
 /* CONTENIDO TEXTO */
 
@@ -86,19 +48,6 @@ $negro: black;
     
     
 }
-
-
-/*.controls {
-    width: 100%;
-    border-radius: 4px;
-    border: 3px solid #390099;
-    font-size: 20px;
-    background-color: transparent;
-    padding: 5px;
-    margin: 2px;
-    outline: none;
-    
-}*/
 
 
 .contenido__formulario{

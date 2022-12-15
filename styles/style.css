@@ -10,7 +10,6 @@
   padding: 50px;
   grid-auto-flow: dense;
 }
-
 .bts__item {
   display: flex;
   width: 100%;
@@ -24,7 +23,6 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
-
 .bts__item:hover {
   transform: scale(1.04);
 }
@@ -41,7 +39,7 @@
 /*CONTENIDO GLOBAL*/
 @font-face {
   font-family: "Khand";
-  src: url(./tipografia/Khand-Medium.ttf);
+  src: url(..//tipografia/Khand-Medium.ttf);
   font-style: normal;
 }
 * {
@@ -147,42 +145,10 @@ footer {
   }
 }
 /* CONTENIDO DEL ENCABEZADO*/
-/*.nav {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-}*/
 .navbar-brand {
   font-size: 50px;
 }
 
-/*.menu {
-    display: flex;
-}
-
-
-.menu li {
-    margin: 10px;
-    font-family: 'Khand';
-    font-size: 18px;
-}
-
-
-.menu li a {
-    color: white;
-    font-weight: bold;
-    transition: all 0.5ms ease;
-}
-
-*.menu li a:hover{
-    padding: 5px 10px;
-    background: white;
-    color: #e85d04;
-    border-radius: 15px;
-
-} */
 /* CONTENIDO TEXTO */
 .contenido__titulo {
   display: flex;
@@ -213,17 +179,6 @@ footer {
   background-color: rgba(232, 93, 4, 0.8);
 }
 
-/*.controls {
-    width: 100%;
-    border-radius: 4px;
-    border: 3px solid #390099;
-    font-size: 20px;
-    background-color: transparent;
-    padding: 5px;
-    margin: 2px;
-    outline: none;
-
-}*/
 .contenido__formulario {
   color: black;
   font-family: "Khand";
