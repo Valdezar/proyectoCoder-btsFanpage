@@ -1,65 +1,13 @@
-/*CONTENIDO GLOBAL*/
-
-@font-face {
-    font-family: 'Khand';
-    src: url(./tipografia/Khand-Medium.ttf);
-    font-style: normal;
-}
+$blanco: white;
+$negro: black;
 
 
-*{  
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import "index";
+@import "globalStyles";
+@import "mediaqueries";
 
 
-header {
-    width: 100%;
-    height: 100px;
-    /*background-image: linear-gradient(to right, #e85d04, #390099);*/
-    position: sticky;
-    top: 0;
-    z-index: 2;
-    
-        
-}
 
-
-header span {
-    display: none;
-}
-
-
-a {
-    text-decoration: none;
-    color: black;
-}
-
-
-ul {
-    list-style-type: none;
-}
-
-footer {
-    
-    color: white;
-    text-align: center;
-    font-family: 'Khand';
-    
-}
-
-.redes img {
-    height: 30px;
-    background-color: whitesmoke;
-    border: 2px solid white;
-    border-radius: 10px;
-    transition: all 0.5ms ease;
-}
-
-.redes img:hover{
-   background: #e85d04;
-}
 
 /* CONTENIDO DEL ENCABEZADO*/
 
@@ -116,7 +64,7 @@ footer {
     display: flex;
     justify-content: center;
     font-family: 'Khand';
-    color: white;
+    color: $blanco;
     font-size: 30px;
     font-weight: lighter;
 }
@@ -155,62 +103,19 @@ footer {
 
 .contenido__formulario{
     
-    color: black;
+    color: $negro;
     font-family: 'Khand';
     font-size: 22px;
 }
 
 .opciones {
     font-family: 'Khand';
-    color: black; 
-}
-
-/* CONTENIDO MEDIA DEL INDEX */
-
-.fondo {
-  background-color: black;
-  
-}
- 
-
-.bts {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-auto-rows: minmax(250px, auto);
-    padding: 50px;
-    grid-auto-flow: dense;
-}
-
-.bts__item {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    border: solid black;
-    border-radius: 30px;
-    transition: transform 0.2s ease-in-out;
-
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-   
+    color: $negro; 
 }
 
 
-.bts__item:hover {
-    transform: scale(1.04);
-}
-
-.alto {
-    grid-row: span 2;
-    transform: translateY(-50px);
-}
 
 
-.solo {
-    transform: translateY(50px);
-}
 
 /*CONTENIDO PAG HISTORIA*/
 
@@ -226,7 +131,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: $blanco;
     font-family: 'Khand';
     background-size: cover;
     background-position: end;
@@ -274,7 +179,7 @@ footer {
 
 .tarjeta {
     background-color: transparent;
-    border: 2px solid white;
+    border: 2px solid $blanco;
     font-family: 'Khand';
     border-radius: 5px;
     margin-top: 10px;
@@ -293,12 +198,12 @@ footer {
 
 .tarjeta__nombre-integrante {
     text-align: center;
-    color: white;
+    color: $blanco;
 }
 
 .tarjeta__info {
     text-align: center;
-    color: white;
+    color: $blanco;
 }
 
 .self {
@@ -374,73 +279,6 @@ footer {
    
 
 .letter {
-color: white;
+color: $blanco;
 }
 
-/*MEDIA QUERIE*/
-@media (min-width: 600px) {
-    .wide {
-        grid-column: span 2;
-        grid-row: span 2;
-    }
-    
-    .tall {
-        grid-row: span 3;
-    }
-    
-    .bts {
-        grid-row: span 2;
-    }
-    
-    .peque {
-       grid-column: span 2;
-       
-    }
-    }
-
-
-@media (max-width: 576px){
-    .bts {
-        display: -webkit-box;
-        height: 100vh;
-        width: 100vw;
-        overflow-x: scroll;
-    }
-}
-
-@media (max-width: 576px){
-    .contenido__texto{
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        
-    }
-}
-
-@media (max-width: 576px){
-    .contenido__titulo{
-        display: flex;
-        justify-content: center;
-        text-align: center;
-    }
-}
-
-@media (max-width: 576px){
-    .tarjetas {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
-}
-
-@media (max-width: 576px){
-    .self {
-        transform: translate(0px);  
-    }
-}
-@media (max-width: 576px){
-    .nextTo {
-        display: flex;
-        flex-direction: column;  
-    }
-}

@@ -1,0 +1,62 @@
+/*CONTENIDO GLOBAL*/
+
+@font-face {
+    font-family: 'Khand';
+    src: url(./tipografia/Khand-Medium.ttf);
+    font-style: normal;
+}
+
+
+*{  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    width: 100%;
+    height: 100px;
+    /*background-image: linear-gradient(to right, #e85d04, #390099);*/
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    
+        
+}
+
+
+header span {
+    display: none;
+}
+
+
+a {
+    text-decoration: none;
+    color: $negro;
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+footer {
+    
+    color: $blanco;
+    text-align: center;
+    font-family: 'Khand';
+    
+}
+
+.redes img {
+    height: 30px;
+    background-color: whitesmoke;
+    border: 2px solid $blanco;
+    border-radius: 10px;
+    transition: all 0.5ms ease;
+}
+
+.redes img:hover{
+   background: #e85d04;
+}
