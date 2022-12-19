@@ -1,0 +1,29 @@
+/*CONTENIDO DE PAGINA DE CONTACTO*/
+
+
+.formulario {
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    
+    
+    padding: 30px;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 20px;
+    background-color: rgba(232, 93, 4, 0.8);
+    
+      &__contenido{
+    
+        color: $negro;
+        font-family: 'Khand';
+        font-size: 22px;
+    } 
+    
+}
+
+
+.opciones {
+    font-family: 'Khand';
+    color: $negro; 
+}

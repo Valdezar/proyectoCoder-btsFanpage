@@ -32,15 +32,17 @@
             transform: scale(1.04);
           }
        }
+       .alto {
+        grid-row: span 2;
+        transform: translateY(-50px);
     }
+    
+    
+    .solo {
+        transform: translateY(50px);
+    }
+    
+  }
 
   
-  .alto {
-      grid-row: span 2;
-      transform: translateY(-50px);
-  }
   
-  
-  .solo {
-      transform: translateY(50px);
-  }

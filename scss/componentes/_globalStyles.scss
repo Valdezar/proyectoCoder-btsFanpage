@@ -25,12 +25,6 @@ header {
         
 }
 
-
-header span {
-    display: none;
-}
-
-
 a {
     text-decoration: none;
     color: $negro;
@@ -55,8 +49,63 @@ footer {
     border: 2px solid $blanco;
     border-radius: 10px;
     transition: all 0.5ms ease;
+
+    &:hover{
+        background: #e85d04;
+     }
 }
 
-.redes img:hover{
-   background: #e85d04;
+/* CONTENIDO DEL ENCABEZADO*/
+
+.navbar-brand{
+    font-size: 50px;
+}
+
+/* CONTENIDO TEXTO */
+
+.contenido__titulo {
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+    font-family: 'Khand';
+    font-size: 40px;
+    &__texto {
+     display: flex;
+     justify-content: center;
+     font-family: 'Khand';
+     color: $blanco;
+     font-size: 30px;
+     font-weight: lighter;
+  }
+}
+
+
+
+/*CONTENIDO PAG HISTORIA*/
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+
+.conten {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $blanco;
+    font-family: 'Khand';
+    background-size: cover;
+    background-position: end;
+}
+
+.uno {
+    grid-row: span 2;
+}
+
+
+.idol{
+    border-radius: 20px;
 }
