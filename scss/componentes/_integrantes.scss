@@ -1,7 +1,5 @@
 /*CONTENIDO PAGINA DE INTEGRANTES*/
 
-
-
 .tarjetas {
     display: grid;
     grid-template-columns: repeat(3, 400px);
@@ -9,11 +7,17 @@
     align-items: center;
     justify-content: center;
     gap: 60px;
+   
+    @media (max-width: 576px){
+        .tarjetas {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+        }
+    }
   
-    
 }
  
-
 .tarjeta {
     background-color: transparent;
     border: 2px solid $blanco;
@@ -42,7 +46,15 @@
 
 .self {
     transform: translate(460px);
+    
+    @media (max-width: 576px){
+        .self {
+            transform: translate(0px);  
+        }
+    }
 }
+
+
 
 /* VER MAS */
 

@@ -32,13 +32,12 @@
             transform: scale(1.04);
           }
        }
-       .alto {
+      & .alto {
         grid-row: span 2;
         transform: translateY(-50px);
     }
     
-    
-    .solo {
+      & .solo {
         transform: translateY(50px);
     }
     

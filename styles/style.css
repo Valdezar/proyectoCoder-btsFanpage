@@ -94,7 +94,7 @@ footer {
   font-family: "Khand";
   font-size: 40px;
 }
-.contenido__texto {
+.contenido__titulo__texto {
   display: flex;
   justify-content: center;
   font-family: "Khand";
@@ -217,6 +217,13 @@ footer {
   justify-content: center;
   gap: 60px;
 }
+@media (max-width: 576px) {
+  .tarjetas .tarjetas {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
 
 .tarjeta {
   background-color: transparent;
@@ -243,6 +250,11 @@ footer {
 
 .self {
   transform: translate(460px);
+}
+@media (max-width: 576px) {
+  .self .self {
+    transform: translate(0px);
+  }
 }
 
 /* VER MAS */
