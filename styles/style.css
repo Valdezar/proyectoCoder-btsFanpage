@@ -18,13 +18,10 @@
   background-color: white;
   border: solid black;
   border-radius: 30px;
-  transition: transform 0.2s ease-in-out;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-}
-.bts__item:hover {
-  transform: scale(1.04);
+  transition: transform 0.2s ease-in-out;
 }
 .bts .alto {
   grid-row: span 2;
@@ -32,6 +29,9 @@
 }
 .bts .solo {
   transform: translateY(50px);
+}
+.bts__item:hover {
+  transform: scale(1.04);
 }
 
 /*CONTENIDO GLOBAL*/
@@ -130,62 +130,7 @@ footer {
   border-radius: 20px;
 }
 
-/*MEDIA QUERIE*/
-@media (min-width: 600px) {
-  .wide {
-    grid-column: span 2;
-    grid-row: span 2;
-  }
-  .tall {
-    grid-row: span 3;
-  }
-  .bts {
-    grid-row: span 2;
-  }
-  .peque {
-    grid-column: span 2;
-  }
-}
-@media (max-width: 576px) {
-  .bts {
-    display: -webkit-box;
-    height: 100vh;
-    width: 100vw;
-    overflow-x: scroll;
-  }
-}
-@media (max-width: 576px) {
-  .contenido__texto {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-  }
-}
-@media (max-width: 576px) {
-  .contenido__titulo {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-  }
-}
-@media (max-width: 576px) {
-  .tarjetas {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-}
-@media (max-width: 576px) {
-  .self {
-    transform: translate(0px);
-  }
-}
-@media (max-width: 576px) {
-  .nextTo {
-    display: flex;
-    flex-direction: column;
-  }
-}
+
 /*CONTENIDO DE PAGINA DE CONTACTO*/
 .formulario {
   width: 450px;
@@ -314,4 +259,59 @@ footer {
   color: white;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*MEDIA QUERIE*/
+@media (min-width: 600px) {
+  .wide {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+  .tall {
+    grid-row: span 3;
+  }
+  .bts {
+    grid-row: span 2;
+  }
+  .peque {
+    grid-column: span 2;
+  }
+}
+@media (max-width: 576px) {
+  .bts {
+    display: -webkit-box;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: scroll;
+  }
+}
+@media (max-width: 576px) {
+  .contenido__texto {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media (max-width: 576px) {
+  .contenido__titulo {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media (max-width: 576px) {
+  .tarjetas {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 576px) {
+  .self {
+    transform: translate(0px);
+  }
+}
+@media (max-width: 576px) {
+  .nextTo {
+    display: flex;
+    flex-direction: column;
+  }
+}
