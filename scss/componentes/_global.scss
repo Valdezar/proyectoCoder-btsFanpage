@@ -43,7 +43,9 @@
     border: 2px solid $fontlight;
     border-radius: 10px;
     transition: all 0.5ms ease;
+
+    &:hover{
+      background: #e85d04;
+    }
   }
-  .redes img:hover {
-    background: #e85d04;
-  }
+ 
