@@ -9,10 +9,12 @@
   padding: 0;
   box-sizing: border-box; }
 
+.fondo {
+  background-color: black; }
+
 header {
   width: 100%;
   height: 100px;
-  /*background-image: linear-gradient(to right, #e85d04, #390099);*/
   position: sticky;
   top: 0;
   z-index: 2; }
@@ -40,9 +42,6 @@ footer {
   background: #e85d04; }
 
 /* CONTENIDO MEDIA DEL INDEX */
-.fondo {
-  background-color: black; }
-
 .bts {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
