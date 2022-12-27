@@ -1,0 +1,22 @@
+{
+  "name": "proyectobts",
+  "version": "1.0.0",
+  "description": "Proyecto coderhouse",
+  "main": "index.js",
+  "scripts": {
+    "build-sass": "node-sass --include-path scss scss/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JeonNani/proyectoCoder-valeriDezar.git"
+  },
+  "author": "Naomi Dezar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JeonNani/proyectoCoder-valeriDezar/issues"
+  },
+  "homepage": "https://github.com/JeonNani/proyectoCoder-valeriDezar#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
