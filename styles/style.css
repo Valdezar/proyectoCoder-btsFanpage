@@ -237,7 +237,24 @@ footer {
 }
 
 /*CONTENIDO PAG DISCOGRAFIA*/
-.nextTo {
+.discog{
+  display: flex;
+  margin: 100px;
+  gap: 40px;
+}
+.discog__img{
+  box-shadow: 0 0 15px whitesmoke;
+
+}
+.discog__content{
+  margin-top: 50px;
+  font-family: 'Khand';
+  font-size: 20px;
+  color: white;
+}
+
+
+/*.nextTo {
   display: flex;
   justify-content: center;
 }
@@ -260,6 +277,7 @@ footer {
   grid-auto-rows: minmax(200px, auto);
   gap: 5px;
 }
+
 .gif__item {
   border-radius: 20px;
   background-position: center;
@@ -269,7 +287,7 @@ footer {
 
 .letter {
   color: white;
-}
+}*/
 
 /*MEDIA QUERIE*/
 @media (min-width: 600px) {
