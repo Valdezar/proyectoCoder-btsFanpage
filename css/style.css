@@ -41,6 +41,12 @@ footer {
 .redes img:hover {
   background: #e85d04; }
 
+.whatsapp {
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+}
+
 /* CONTENIDO MEDIA DEL INDEX */
 .bts {
   display: grid;
